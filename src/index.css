@@ -1,13 +1,96 @@
 body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(54, 54, 54);
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login {
+  height: 300px;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login form {
+  height: 300px;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drag-area {
+  background: rgb(105, 105, 105);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0px;
+  /* top: calc(5vh); */
+  /* left: calc(5vw); */
+}
+
+.refresh {
+  padding: 10px;
+  /* position: absolute; */
+  background: rgba(133, 133, 133, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.add-tile-field {
+  /* position: absolute; */
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  z-index: 1;
+  height: fit-content;
+  width: fit-content;
+  font-size: 5rem;
+  color: rgb(82, 90, 53);
+}
+
+.add-tile-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  z-index: 1;
+  height: fit-content;
+  width: fit-content;
+  font-size: 5rem;
+  color: rgb(171, 136, 255);
+  /* background: white; */
+}
+
+.add-tile-form {
+  position: absolute;
+  border-radius: 20px;
+  top: 250px;
+  right: 100px;
+  z-index: 1;
+  height: 300px;
+  width: 200px;
+  text-align: center;
+
+  background-color: rgb(171, 136, 255);
+}
+
+.tile {
+  border-radius: 0px;
+  display: inline-block;
+  top: 0;
+  left: 0;
 }
